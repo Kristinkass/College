@@ -1,0 +1,102 @@
+object Form1: TForm1
+  Left = 258
+  Height = 364
+  Top = 231
+  Width = 518
+  Caption = 'Form1'
+  ClientHeight = 364
+  ClientWidth = 518
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 30
+    Height = 20
+    Top = 40
+    Width = 141
+    Caption = 'Введите значение a:'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 208
+    Height = 28
+    Top = 40
+    Width = 265
+    OnChange = Edit1Change
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 20
+    Top = 96
+    Width = 142
+    Caption = 'Введите значение b:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 208
+    Height = 28
+    Top = 96
+    Width = 265
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 30
+    Height = 20
+    Top = 152
+    Width = 140
+    Caption = 'Введите значение x:'
+    ParentColor = False
+  end
+  object Edit3: TEdit
+    Left = 208
+    Height = 28
+    Top = 152
+    Width = 265
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 48
+    Height = 39
+    Top = 280
+    Width = 105
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 208
+    Height = 39
+    Top = 280
+    Width = 105
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 30
+    Height = 20
+    Top = 208
+    Width = 143
+    Caption = 'Значение функции f:'
+    ParentColor = False
+  end
+  object Edit4: TEdit
+    Left = 208
+    Height = 28
+    Top = 208
+    Width = 265
+    TabOrder = 5
+  end
+  object BitBtn1: TBitBtn
+    Left = 368
+    Height = 40
+    Top = 280
+    Width = 105
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 6
+  end
+end

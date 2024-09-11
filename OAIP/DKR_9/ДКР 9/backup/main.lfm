@@ -1,0 +1,72 @@
+object fMain: TfMain
+  Left = 273
+  Height = 450
+  Top = 131
+  Width = 1200
+  BorderStyle = bsDialog
+  Caption = 'Мультфильмы справочник'
+  ClientHeight = 450
+  ClientWidth = 1200
+  Color = 10663797
+  DesignTimePPI = 115
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 1200
+    Align = alTop
+    Color = 8230221
+    ParentColor = False
+    TabOrder = 0
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 384
+    Top = 66
+    Width = 1200
+    Align = alBottom
+    AlternateColor = 13622201
+    Color = 12044437
+    ColCount = 7
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+  object bAdd: TSpeedButton
+    Left = 20
+    Height = 35
+    Top = 23
+    Width = 200
+    Caption = 'Добавить мультфильм'
+    OnClick = bAddClick
+  end
+  object bDel: TSpeedButton
+    Left = 440
+    Height = 35
+    Top = 23
+    Width = 200
+    Caption = 'Удалить мультфильм'
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 230
+    Height = 35
+    Top = 23
+    Width = 200
+    Caption = 'Редактировать мультфильм'
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 650
+    Height = 35
+    Top = 23
+    Width = 200
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end

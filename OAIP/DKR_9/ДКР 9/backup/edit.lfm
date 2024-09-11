@@ -1,0 +1,167 @@
+object fEdit: TfEdit
+  Left = 538
+  Height = 534
+  Top = 205
+  Width = 415
+  BorderStyle = bsDialog
+  Caption = 'Редактор мультфильма'
+  ClientHeight = 534
+  ClientWidth = 415
+  Color = 14085553
+  DesignTimePPI = 115
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object Lname: TLabel
+    Left = 8
+    Height = 19
+    Top = 8
+    Width = 243
+    Caption = 'Укажите наименование мультфильма:'
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 27
+    Top = 32
+    Width = 312
+    TabOrder = 0
+  end
+  object Lcountry: TLabel
+    Left = 8
+    Height = 19
+    Top = 72
+    Width = 102
+    Caption = 'Укажите страну:'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 8
+    Height = 27
+    Top = 96
+    Width = 210
+    TabOrder = 1
+  end
+  object LJanr: TLabel
+    Left = 8
+    Height = 19
+    Top = 264
+    Width = 102
+    Caption = 'Выберите жанр:'
+    ParentColor = False
+  end
+  object CBNote: TComboBox
+    Left = 8
+    Height = 27
+    Top = 288
+    Width = 210
+    ItemHeight = 19
+    ItemIndex = 0
+    Items.Strings = (
+      'Вестерн'
+      'Драма'
+      'Комедия'
+      'Научный'
+      'Приключения'
+      'Семейный'
+      'Фантастика'
+      'Фэнтези'
+    )
+    TabOrder = 2
+    Text = 'Вестерн'
+  end
+  object bSave: TBitBtn
+    Left = 24
+    Height = 36
+    Top = 472
+    Width = 160
+    Caption = 'Сохранить данные'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 216
+    Height = 36
+    Top = 472
+    Width = 160
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object YkGod: TLabel
+    Left = 8
+    Height = 19
+    Top = 136
+    Width = 143
+    Caption = 'Укажите год создания:'
+    ParentColor = False
+  end
+  object eGod: TEdit
+    Left = 8
+    Height = 27
+    Top = 160
+    Width = 208
+    OnChange = eGodChange
+    OnKeyPress = eGodKeyPress
+    TabOrder = 5
+  end
+  object LSmotr: TLabel
+    Left = 8
+    Height = 19
+    Top = 328
+    Width = 101
+    Caption = 'Смотрел ли его:'
+    ParentColor = False
+  end
+  object CBSmotr: TComboBox
+    Left = 8
+    Height = 27
+    Top = 352
+    Width = 120
+    ItemHeight = 19
+    ItemIndex = 0
+    Items.Strings = (
+      'Да'
+      'Нет'
+    )
+    TabOrder = 6
+    Text = 'Да'
+  end
+  object LRegh: TLabel
+    Left = 8
+    Height = 19
+    Top = 200
+    Width = 149
+    Caption = 'Укажите режессера(ов):'
+    ParentColor = False
+  end
+  object Regh: TEdit
+    Left = 8
+    Height = 27
+    Top = 224
+    Width = 312
+    OnChange = ReghChange
+    TabOrder = 7
+  end
+  object LProd: TLabel
+    Left = 8
+    Height = 19
+    Top = 392
+    Width = 183
+    Caption = 'Укажите длительность (мин):'
+    ParentColor = False
+  end
+  object eDlit: TEdit
+    Left = 8
+    Height = 27
+    Top = 416
+    Width = 120
+    OnKeyPress = eDlitKeyPress
+    TabOrder = 8
+  end
+end

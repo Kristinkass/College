@@ -1,0 +1,57 @@
+unit unit3;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+
+type
+
+  { TForm2 }
+
+  TForm2 = class(TForm)
+    BitBtn1: TBitBtn;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Memo1: TMemo;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm2 }
+
+procedure TForm2.BitBtn1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TForm2.Memo1Change(Sender: TObject);
+var i,t,k,k1:integer;
+begin
+k:=strtoint(Edit1.Text); // число
+k1:=strtoint(Edit2.Text); // степень
+i:=1; t:=1;
+while i<=k1 do
+begin
+t:=t*k;
+i:=i+1;
+end;
+Memo1.Lines.add('число '+Edit1.Text+' в степени '+Edit2.Text+' равно: '+IntToStr(t));
+end;
+end.
+
